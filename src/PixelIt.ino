@@ -3365,12 +3365,18 @@ uint8_t TranslatePin(String pin)
         return GPIO_NUM_19;
     if (pin == "GPIO_NUM_21")
         return GPIO_NUM_21;
+    #ifdef GPIO_NUM_22
     if (pin == "GPIO_NUM_22")
         return GPIO_NUM_22;
+    #endif
+    #ifdef GPIO_NUM_23
     if (pin == "GPIO_NUM_23")
         return GPIO_NUM_23;
+    #endif
+    #ifdef GPIO_NUM_25
     if (pin == "GPIO_NUM_25")
         return GPIO_NUM_25;
+    #endif
     if (pin == "GPIO_NUM_26")
         return GPIO_NUM_26;
     if (pin == "GPIO_NUM_27")
